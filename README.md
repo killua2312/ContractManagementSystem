@@ -76,7 +76,13 @@ A full-stack web application for managing contracts with real-time updates. The 
    npm install
    ```
 
-3. Start the frontend development server
+3. Create a `.env` file in the client directory
+
+  ```
+  NEXT_PUBLIC_BACKEND_URL=http://localhost:4000
+  ```
+
+4. Start the frontend development server
    ```bash
    npm run dev
    ```
@@ -85,9 +91,12 @@ A full-stack web application for managing contracts with real-time updates. The 
 
 ## Environment Variables
 
-### Backend
+### Server
 - `PORT` - The port on which the backend server will run (default: 4000)
 - `DATABASE_URL` - Supabase connection string
+
+### Client
+- `NEXT_PUBLIC_BACKEND_URL` - The server api url (default: http://localhost:4000)
 
 ## Local Development Guide
 
