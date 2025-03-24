@@ -9,7 +9,7 @@ export const initializeSocket = (
   onContractDelete: (data: { deletedId: string }) => void,
 ) => {
   const SOCKET_URL =
-    process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
+    process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:4000";
 
   if (!socket) {
     socket = io(SOCKET_URL);
